@@ -26,3 +26,9 @@ Route::post('inicio', function () {
 Route::GET('nombrate/{nombre?}', function ($nombre = "") {
    return view('nombrate', compact('nombre'));
 });
+
+
+Route::get('peliculas', 'PeliculasController@index')->name('peliculas.index');
+Route::get('peliculas/{pelicula}', 'PeliculasController@show')->name('peliculas.show');
+
+Route::resource('genero', 'GeneroController');
