@@ -1,4 +1,17 @@
-<h3>como andan</h3>
-<form method="post" action="inicio" >
-    <button type="submit">Enviar</button>
-<form>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Bienvenidos!</div>
+
+                <div class="card-body">
+                    <h2>Hola {{ $nombre }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
